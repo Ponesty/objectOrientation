@@ -67,7 +67,7 @@ const favoriteThings = {
 */
 
 //Code here
-
+favoriteThings.car = 'Honda';
 
 /*
   Now use bracket or dot notation to change the value of the food key in your favoriteThings object to be 'Chicken Nuggets'
