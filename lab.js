@@ -221,6 +221,19 @@ console.log(precious.name);
 */
 
 //Code here
+class Wizard {
+  constructor(name, age, favoriteSpell){
+    this.name = name;
+    this.age = age;
+    this.favoriteSpell = favoriteSpell;
+  }
+  castSpell(){
+    console.log(`${this.name} has cast ${this.favoriteSpell}`);
+  }
+
+}
+let iceKing = new Wizard('Ice King',1000, 'ice storm');
+iceKing.castSpell();
 
 //////////////////////////// PROBLEM 14 ////////////////////////////
 /*
@@ -246,6 +259,9 @@ console.log(precious.name);
 */
 
 //Code Here
+class Phone{
+  constructor()
+}
 
   
 /*
