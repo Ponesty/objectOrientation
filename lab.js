@@ -130,7 +130,10 @@ console.log(greeting(obj));
 */
 
 //Code Here
-
+function totalPopulation(obj){
+  let {utah, california, texas, arizona} = obj;
+  return utah+california+texas+arizona;
+}
 
 
 //////////////////////////// PROBLEM 9 ////////////////////////////
