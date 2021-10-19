@@ -76,6 +76,8 @@ favoriteThings.car = 'Honda';
 */
 
 //Code here
+favoriteThings['food'] = 'Chicken Nuggets';
+favoriteThings.book = 'Harry Potter';
 
 
 //////////////////////////// PROBLEM 6 ////////////////////////////
