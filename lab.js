@@ -311,6 +311,8 @@ console.log(phone1.price);
 */
 
 //Code Here 
+phone1.sell();
+console.log(phone1.sold);
 
 
 //////////////////////////// PROBLEM 15 ////////////////////////////
