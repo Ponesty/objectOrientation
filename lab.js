@@ -115,7 +115,7 @@ function greeting( obj ) {
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
 }
-console.log(greeting(obj));
+
 
 
 
@@ -147,7 +147,19 @@ function totalPopulation(obj){
 */
 
 //Code Here
+// const dent = {
+//   carb: "w",
+//   fat: "x",
+//   protein: "y"
+// }
+function ingredients(obj){
+  let{carb, fat, protein}= obj;
+  let arr= [];
+  arr.push(carb,fat,protein);
+  return arr;
 
+}
+// console.log(ingredients(dent));
 
 
 //////////////////////////// PROBLEM 10 ////////////////////////////
