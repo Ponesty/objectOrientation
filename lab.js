@@ -96,6 +96,8 @@ var carDetails = {
 */
 
 //Code Here
+let {color: carColor, make: carMake, model: carModel, year: carYear} = carDetails;
+
 
 
 
