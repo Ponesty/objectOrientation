@@ -300,6 +300,8 @@ phone3 = new Phone('Moto', 'G', 32,'green', 299);
 */ 
 
 //Code Here 
+phone1.changePrice(799);
+console.log(phone1.price);
 
 
 /*
