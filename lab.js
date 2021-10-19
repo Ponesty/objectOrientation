@@ -289,7 +289,9 @@ class Phone{
 */
 
 //Code Here
-
+phone1 = new Phone('Apple', 'S', 32,'silver', 699);
+phone2 = new Phone('Samsung', 'A', 32,'black', 499);
+phone3 = new Phone('Moto', 'G', 32,'green', 299);
 /* 
   Call the changePrice function on one of your phones, 
   don't forget to pass in a new price 
