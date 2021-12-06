@@ -289,9 +289,9 @@ class Phone{
 */
 
 //Code Here
-phone1 = new Phone('Apple', 'S', 32,'silver', 699);
-phone2 = new Phone('Samsung', 'A', 32,'black', 499);
-phone3 = new Phone('Moto', 'G', 32,'green', 299);
+let phone1 = new Phone('Apple', 'S', 32,'silver', 699);
+let phone2 = new Phone('Samsung', 'A', 32,'black', 499);
+let phone3 = new Phone('Moto', 'G', 32,'green', 299);
 /* 
   Call the changePrice function on one of your phones, 
   don't forget to pass in a new price 
@@ -380,14 +380,25 @@ console.log(helensInfo);
 */
 
 //Code Here 
-
+class Vehicle {
+  constructor(capacity, color, mileage){
+    this.capacity = capacity;
+    this.color = color;
+    this.mileage = mileage;
+  }
+  
+  move(miles) {
+    this.mileage += miles;
+    return this.mileage;
+  }
+}
 
 /*
   Create a vehicle using your new class and save it to a variable called myFirstVehicle
 */
 
 //Code Here
-
+const myFirstVehicle = new Vehicle(300,"blue",30000);
 
 /* 
   Now we'll create a class that's based off of the vehicle class. 
@@ -399,16 +410,23 @@ console.log(helensInfo);
 */
 
 //Code Here
-
+class Motorcycle extends Vehicle {
+  constructor(capacity, color, mileage, make, isCool) {
+    super(capacity,color, mileage);
+    this.make = make;
+    this.isCool = isCool;
+  }
+}
 /*
   Create a Motorcycle using your new class and save it to a variable called myFirstMotorcycle
 */
 
 //Code Here 
-
+const myFirstMotorcycle = new Motorcycle(200,"Black",20000,"hyundia", false);
 /*
   Call the move function on myFirstMotorcycle (don't forget the parameter)
 */
+console.log(myFirstMotorcycle.move(13));
 
 /*
   Let's make another class based off of Vehicle. 
@@ -426,7 +444,24 @@ console.log(helensInfo);
 */
 
 //Code Here
-
+class Boat extends Vehicle {
+  constructor(capacity, color, mileage,name,type,isSeaworthy){
+    super(capacity,color,mileage);
+    this.name = name;
+    this.type = type;
+    this.isSeaworthy = isSeaworthy;
+  }
+  checkSeaworthiness(){
+    if(this.isSeaworthy){
+      console.log(`The ${this.color} ${this.type} ${this.name} is seaworthy!`);
+    } else {
+      console.log(`You need to get your ${this.type} in shape!`);
+    }
+  }
+  performMaintenance(){
+    this.isSeaworthy = true;
+  }
+}
 
 /*
   Create a new boat using your class. You can choose whatever values you like for all the 
@@ -434,21 +469,22 @@ console.log(helensInfo);
 */
 
 //Code Here
-
+const myFirstBoat = new Boat(130,"black",900000,"TheSherLockUp","Motor Yacht",false);
 /*
   Call the checkSeaworthiness method on your new boat
 */
 
 //Code Here
-
+myFirstBoat.checkSeaworthiness();
 /*
   Now run the performMaintenance method on your boat
 */
 
 //Code Here 
-
+myFirstBoat.performMaintenance();
 /*
   Check the seaworthiness once more (you should be ready for the water!)
 */
 
 //Code Here
+myFirstBoat.checkSeaworthiness();
